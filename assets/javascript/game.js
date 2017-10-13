@@ -4,6 +4,7 @@ var game = {
     loseCounter: 0,
     userAmount: 0,
     gameAmount: 0,
+    
     crystalRandomValue: function() {
         $("#red").attr("data-num", Math.floor(Math.random() * 12) + 1)
         $("#blue").attr("data-num", Math.floor(Math.random() * 12) + 1)
@@ -16,10 +17,10 @@ var game = {
         game.userAmount += x
         if (game.userAmount > game.gameAmount) {
             game.loseCounter++
-            $("#resetbtn").css("display", "block")
+                $("#resetbtn").css("display", "block")
         } else if (game.userAmount === game.gameAmount) {
             game.winCounter++
-            $("#resetbtn").css("display", "block")
+                $("#resetbtn").css("display", "block")
         }
         $("#counters").empty()
         $("#counters").append("<p>Wins: " + game.winCounter + "</p>")
@@ -27,11 +28,16 @@ var game = {
         $("#score").text(game.userAmount)
 
 
-    },//end addScore fucntion
-    gameReset: function(){
-    	$("#score").empty()
-    	game.crystalRandomValue()
-    }//end gameReset function
+    }, //end addScore fucntion
+    gameReset: function() {
+        
+        game.addScore(0) 
+        
+        game.userAmount === 0
+        $("#score").empty()
+        $("#score").removeData("num")
+        game.crystalRandomValue()
+    } //end gameReset function
 
 } //end game object
 
