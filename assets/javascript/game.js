@@ -16,10 +16,10 @@ var game = {
         game.userAmount += x
         if (game.userAmount > game.gameAmount) {
             game.loseCounter++
-            game.gameReset()
+            $("#resetbtn").css("display", "block")
         } else if (game.userAmount === game.gameAmount) {
             game.winCounter++
-            game.gameReset()
+            $("#resetbtn").css("display", "block")
         }
         $("#counters").empty()
         $("#counters").append("<p>Wins: " + game.winCounter + "</p>")
