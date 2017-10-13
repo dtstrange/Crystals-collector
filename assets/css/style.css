@@ -1,0 +1,61 @@
+body{
+	background-image: url("../images/gemstone.jpg");
+}
+
+#banner{
+	background-color: #c8712e;
+	max-width: 250px;
+	text-align: center;
+	padding: 20px;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+}
+
+#instructions{
+	background-color: #fae6ce;
+	max-width: 400px;
+	margin: 5px;
+	height: 400px;
+}
+
+#points{
+	background-color: #60c782;
+	width: 150px;
+	height: 100px;
+	float: left;
+	margin: 5px;
+}
+
+#counters{
+	background-color: #56fcfd;
+	width: 70px;
+	height: 100px;
+	float: left;
+	margin: 5px;
+}
+
+#buttons{
+	clear: both;
+	margin: 5px;
+}
+
+#sa{
+	background-color: #33a296;
+	width: 200px;
+	margin: 5px;
+	padding: 5px 0px 5px 0px;
+	
+}
+
+#score{
+	background-color: #33a296;
+	width: 200px;
+	height: 100px;
+	margin: 5px;
+}
+
+#instructions{
+	color: teal;
+}
