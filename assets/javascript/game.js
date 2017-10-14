@@ -65,5 +65,9 @@ $(document).ready(function() {
         var greenNum = $("#green").data("num")
         game.addScore(greenNum)
     });
-    $("#resetbtn").on("click", game.gameReset);
+    $("#resetbtn").on("click", function(){
+    	game.gameReset()
+    	$("#resetbtn").css("display", "none")
+    });
+    	
 });
