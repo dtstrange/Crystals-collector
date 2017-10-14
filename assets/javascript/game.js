@@ -4,7 +4,7 @@ var game = {
     loseCounter: 0,
     userAmount: 0,
     gameAmount: 0,
-    
+
     crystalRandomValue: function() {
         $("#red").attr("data-num", Math.floor(Math.random() * 12) + 1)
         $("#blue").attr("data-num", Math.floor(Math.random() * 12) + 1)
@@ -30,10 +30,10 @@ var game = {
 
     }, //end addScore fucntion
     gameReset: function() {
-        
-        game.addScore(0) 
-        
-        game.userAmount === 0
+
+        game.addScore(0)
+
+        game.userAmount = 0
         $("#score").empty()
         $("#score").removeData("num")
         game.crystalRandomValue()
