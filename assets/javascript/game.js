@@ -17,9 +17,11 @@ var game = {
         game.userAmount += x
         if (game.userAmount > game.gameAmount) {
             game.loseCounter++
+                alert("You went over, you lose!")
                 $("#resetbtn").css("display", "block")
         } else if (game.userAmount === game.gameAmount) {
             game.winCounter++
+                alert("Spot on, you Win!")
                 $("#resetbtn").css("display", "block")
         }
         $("#counters").empty()
@@ -31,7 +33,7 @@ var game = {
     }, //end addScore fucntion
     gameReset: function() {
 
-        game.addScore(0)
+        
 
         game.userAmount = 0
         $("#score").empty()
